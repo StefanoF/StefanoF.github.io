@@ -1,0 +1,95 @@
+html{
+  font-size:100%;
+}
+
+body {
+  font-family: 'Gudea', sans-serif;
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  background-color: #34302D;
+  color: #ece5d4;
+}
+
+.fonts-loading {visibility: hidden;}
+.fonts-loaded,.fonts-failed {visibility: visible;}
+h1 {
+  font-family: 'Rancho', cursive;
+  color: #dd5a1e;
+}
+h1:hover {
+  -webkit-animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
+}
+a{
+  color: #ece5d4;
+}
+a:hover{
+  color: #dd5a1e;
+}
+a:active{
+  color: #ece5d4;
+}
+.unity-a {
+  text-decoration: none !important;
+}
+.bottom-space{
+  padding-bottom:2%;
+}
+
+.portrait-wrapper{
+  margin:auto;
+}
+
+.iconity a{
+  color:inherit;
+}
+.iconity li{
+  padding-right:12px;
+  padding-left:12px;
+  font-size:1.6em;
+}
+.iconity li:hover {
+  -webkit-animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
+  color: #dd5a1e;
+}
+.border-rounded {
+  border: 1px solid #dd5a1e;
+  border-radius: 8px;
+}
+
+@media (max-width: 320px) {
+  body {font-size:1rem;}
+  h1 {font-size: 1.6em;}
+  h2 {font-size: 1.1em;}
+  .portrait-wrapper{width: 6em;}
+}
+
+@media (min-width: 321px) {
+  body {font-size:1.3rem;}
+  h1 {font-size: 2.4em;}
+  h2 {font-size: 1.3em;}
+  .portrait-wrapper{width: 8em;}
+}
+
+@media (min-width: 641px) {
+  body {font-size:1.4rem;}
+  h1 {font-size: 2.6em;}
+  h2 {font-size: 1.4em;}
+  .portrait-wrapper{width: 8em;}
+}
+
+@media (min-width:960px) {
+  body {font-size:1.4rem;}
+  h1 {font-size: 2.8em;}
+  h2 {font-size: 1.4em;}
+  .portrait-wrapper{width: 10em;}
+}
+
+@media (min-width:1100px) {
+  body {font-size:1.6rem;}
+  h1 {font-size: 3em;}
+  h2 {font-size: 1.2em;}
+  .portrait-wrapper{width: 10em;}
+}
