@@ -1,24 +1,28 @@
 document.addEventListener("DOMContentLoaded", function() {
   var gudea = new FontFaceObserver('Gudea');
   var rancho = new FontFaceObserver('Rancho');
-  var fontawesome = new FontFaceObserver('FontAwesome');
-  var body = document.body;
+  var mainContainer = document.getElementById('main-container');
   var toAnimateUp = document.getElementById('toAnimateUp');
   var toAnimateDown = document.getElementById('toAnimateDown');
+  var svgLoading = document.getElementById('loading');
 
   Promise.all([
     gudea.load(),
     rancho.load(),
-    fontawesome.load()
+    //new Promise(resolve => setTimeout(resolve, 2000, 1))
   ])
   .then(function () {
-    body.classList.remove('fonts-loading');
-    body.classList.add('fonts-loaded');
+    svgLoading.classList.remove('loader-loading');
+    svgLoading.classList.add('loader-hidden');
+    mainContainer.classList.remove('fonts-loading');
+    mainContainer.classList.add('fonts-loaded');
     toAnimateUp.className = toAnimateUp.className+' animated fadeInUp';
     toAnimateDown.className = toAnimateDown.className+' animated fadeInDown';
   })
   .catch(function () {
-    body.classList.remove('fonts-loading');
-    body.classList.add('fonts-failed');
+    svgLoading.classList.remove('loader-loading');
+    svgLoading.classList.add('loader-hidden');
+    mainContainer.classList.remove('fonts-loading');
+    mainContainer.classList.add('fonts-failed');
   });
 });

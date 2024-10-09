@@ -2,24 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <meta name="author" content="Stefano Fadda">
-    <meta name="description" content="Developer using Web technologies and passionate Game Designer">
+    <meta name="description" content="Developer using Web technologies and hobbyist Game Designer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#34302D" />
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Stefano Fadda">
     <meta property="og:title" content="Stefano Fadda - Developer">
-    <meta property="og:description" content="Developer using Web technologies and passionate Game Designer">
+    <meta property="og:description" content="Developer using Web technologies and hobbyist Game Designer">
     <meta property="og:image" content="https://www.stefanofadda.eu/img/me.jpg">
     <meta property="og:url" content="https://www.stefanofadda.eu">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ssttiivveennss">
     <meta name="twitter:creator" content="@ssttiivveennss">
     <meta name="twitter:title" content="Stefano Fadda - Developer">
-    <meta name="twitter:description" content="Developer using Web technologies and passionate Game Designer">
+    <meta name="twitter:description" content="Developer using Web technologies and hobbyist Game Designer">
     <meta name="twitter:image" content="https://www.stefanofadda.eu/img/me.jpg">
     <meta name="twitter:url" content="https://www.stefanofadda.eu">
     <meta name="application-name" content="Stefano Fadda - Developer"/>
@@ -51,24 +50,12 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <!-- Custom styles -->
     <link href="css/font-googleapis.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/devicons.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- JS -->
     <script src="js/fontfaceobserver.standalone.js"></script>
     <script src="js/loader.js"></script>
     <script type="application/ld+json">
@@ -90,14 +77,16 @@
           "https://www.linkedin.com/in/stefano-fadda-b7a658104/", 
           "https://twitter.com/ssttiivveennss", 
           "https://stivens.itch.io/", 
+          "https://boardgamegeek.com/user/stivens", 
           "https://www.youtube.com/user/brokenbro", 
           "https://brokenbro.deviantart.com/"
         ]
       }
     </script>
   </head>
-  <body class="fonts-loading">
-    <div class="container-fluid text-center">
+  <body>
+    <svg class="loader-loading" id="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="none" stroke-opacity="1" stroke="#DD5A1E" stroke-width=".5" cx="100" cy="100" r="0"><animate attributeName="r" calcMode="spline" dur="2" values="1;80" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate><animate attributeName="stroke-width" calcMode="spline" dur="2" values="0;25" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" calcMode="spline" dur="2" values="1;0" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate></circle></svg>
+    <div class="container-fluid text-center fonts-loading" id="main-container">
       <div id="toAnimateDown" class="portrait-wrapper">
         <img class="img-responsive img-circle" src="img/me.jpg" alt="Stefano face portrait" title="Stefano face portrait"/>
       </div>
@@ -108,23 +97,58 @@
         <a href="https://www.webranking.it/" target="_blank">Webranking</a>
       </h2>
       <ul class="iconity list-unstyled list-inline text-center bottom-space">
-        <li><a href="https://instagram.com/ssttiivveennss" target="_blank" rel="me" title="Instagram profile"><em class="fa fa-instagram"></em></a></li>
-        <li><a href="https://twitter.com/ssttiivveennss" target="_blank" rel="me" title="X profile"><em class="fa fa-twitter"></em></a></li>
-        <li><a href="https://www.linkedin.com/in/stefano-fadda-b7a658104/" target="_blank" rel="me" title="Linkedin profile"><em class="fa fa-linkedin"></em></a></li>
-        <li><a href="mailto:&#115;&#116;&#101;&#102;&#097;&#110;&#111;&#102;&#097;&#100;&#100;&#097;&#106;&#111;&#098;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" rel="me" title="Email me"><em class="fa fa-send"></em></a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/stefano-fadda-b7a658104/" target="_blank" rel="me" title="Linkedin profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/StefanoF" target="_blank" rel="me" title="Github profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:&#115;&#116;&#101;&#102;&#097;&#110;&#111;&#102;&#097;&#100;&#100;&#097;&#106;&#111;&#098;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" rel="me" title="Email me">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+          </a>
+        </li>
       </ul>
 
       <div id="toAnimateUp">
-        <p>
+        <h2>
           At night I turn into a <strong>Game Designer hobbyist</strong>.
-          <br>
-          I like to merge not only <strong>Git</strong> repos but also my <strong>Mind</strong> with my <strong>Drums</strong>!
-        </p>
+        </h2>
         <ul class="iconity list-unstyled list-inline text-center">
-          <li><a href="https://stivens.itch.io/" target="_blank" rel="me" title="Itch profile"><em class="fa fa-gamepad"></em></a></li>
-          <li><a href="https://github.com/StefanoF" target="_blank" rel="me" title="Github profile"><em class="fa fa-github"></em></a></li>
-          <li><a href="https://www.youtube.com/user/brokenbro" target="_blank" rel="me" title="YouTube profile"><em class="fa fa-youtube"></em></a></li>
-          <li><a href="https://brokenbro.deviantart.com/" target="_blank" rel="me" title="DeviantArt profile"><em class="fa fa-deviantart"></em></a></li>
+          <li>
+            <a href="https://stivens.itch.io/" target="_blank" rel="me" title="Itch profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://boardgamegeek.com/browse/boardgame?username=Stivens&sort=title" target="_blank" rel="me" title="Boardgamegeek profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90" style="width: 100%;"><g fill="none" fill-rule="evenodd"><path fill="#FF5100" d="M58.584 16.512l-8.864 2.415L58.4 0 2.119 20.715l3.077 24.813L0 50.537l15.494 38.811 32.932-12.134 11.448-26.875-4.914-4.738zM107.093 12.93a.34.34 0 0 0-.337-.337h-4.19c-.121 0-.274.153-.274.336v11.085c0 .152.153.274.275.274h4.19c.183 0 .336-.122.336-.274V12.929zm2.904-4.795c1.438 0 2.416.977 2.416 2.413v15.786c0 1.435-.978 2.412-2.416 2.412h-10.61c-1.437 0-2.416-.977-2.416-2.412V10.548c0-1.436.98-2.413 2.416-2.413h10.61zm17.26 11.023V12.96c0-.366-.307-.611-.735-.611h-3.302c-.367 0-.642.275-.642.61v6.2h4.678zm5.32 9.588h-5.32v-5.13h-4.68v5.13h-5.32V10.547c0-1.435.979-2.411 2.415-2.411h10.488c1.438 0 2.417.976 2.417 2.411v18.2zm14.842-15.878c0-.153-.153-.306-.275-.306h-4.403v5.497h4.403c.122 0 .275-.152.275-.275v-4.916zm2.966-4.733a2.32 2.32 0 0 1 2.324 2.32v9.436c0 1.252-1.07 2.321-2.324 2.321h-.153l2.538 6.534h-5.198l-2.569-6.534h-2.262v6.534h-5.32V8.136h12.964zm17.32 5.924c0-.886-.612-1.497-1.499-1.497h-3.18v11.726h3.18c.887 0 1.499-.61 1.499-1.496v-8.733zm1.1-5.924c2.263 0 4.19 1.863 4.19 4.183v12.214c0 2.351-1.927 4.214-4.19 4.214h-11.1V8.136h11.1zM106.97 45.351v-6.199c0-.366-.306-.61-.733-.61h-3.303c-.367 0-.641.274-.641.61v6.199h4.677zm5.32 9.588h-5.32v-5.13h-4.677v5.13H96.97v-18.2c0-1.434.98-2.41 2.416-2.41h10.488c1.437 0 2.416.976 2.416 2.41v18.2zM122.027 43.274v11.665h-4.893V34.328h5.382l4.159 9.619 3.822-9.619h5.627v20.611h-5.015V43.061l-3.486 8.183h-2.079zM140.967 34.328h13.485v4.428h-8.195v3.603h7.094v4.397h-7.094v3.725h8.195v4.458h-13.485zM96.971 60.604h13.485v4.427h-8.195v3.604h7.094v4.397h-7.094v3.725h8.195v4.458H96.971zM114.933 60.604h13.485v4.427h-8.195v3.604h7.094v4.397h-7.094v3.725h8.195v4.458h-13.485zM143.933 81.215l-4.036-7.878-1.682 2.718v5.16h-5.32V60.604h5.32v8.58l5.352-8.58h5.932l-5.963 8.947 6.207 11.664z"/><path fill="#3F3A60" d="M87.275 20.623c0-.153-.092-.337-.306-.337h-4.77v4.55h4.77c.214 0 .306-.152.306-.305v-3.908zm0-8.061c0-.153-.092-.337-.306-.337h-4.77V16.5h4.77c.214 0 .306-.152.306-.335v-3.603zM76.909 28.745V8.134h12.72c1.682 0 2.752 1.068 2.752 2.595v4.58c0 1.405-.917 2.749-2.813 3.207 1.896.458 2.966 1.74 2.966 3.114v4.489c0 1.618-1.07 2.626-2.752 2.626H76.909zm9.394 39.816h5.778v10.29c0 1.343-1.039 2.352-2.354 2.352H79.294c-1.315 0-2.385-1.009-2.385-2.352V62.912c0-1.252 1.07-2.32 2.385-2.32H92.08v4.427h-9.576c-.153 0-.306.152-.306.336v11.053c0 .184.153.306.306.306h4.378c.214 0 .337-.122.337-.306v-3.48h-2.783l1.866-4.367zm0-26.264h5.778v10.29c0 1.344-1.039 2.352-2.354 2.352H79.294c-1.315 0-2.385-1.008-2.385-2.352V36.65c0-1.253 1.07-2.321 2.385-2.321H92.08v4.427h-9.576c-.153 0-.306.153-.306.336v11.054c0 .183.153.305.306.305h4.378c.214 0 .337-.122.337-.305v-3.48h-2.783l1.866-4.368z"/></g></svg>
+            </a>
+          </li>
+        </ul>
+        <h2>
+          I like to merge not only <strong>Git</strong> repos but also my <strong>Mind</strong> with my <strong>Drums</strong> and <strong>Piano</strong>!
+        </h2>
+        <ul class="iconity list-unstyled list-inline text-center">
+          <li>
+            <a href="https://instagram.com/ssttiivveennss" target="_blank" rel="me" title="Instagram profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/brokenbro" target="_blank" rel="me" title="YouTube profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://brokenbro.deviantart.com/" target="_blank" rel="me" title="DeviantArt profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 93.2l-98.2 179.1 7.4 9.5H320v127.7H159.1l-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2H0v-93.2l93.2-179.4-7.4-9.2H0V102.5h156l13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2H320v93.1z"/></svg>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
